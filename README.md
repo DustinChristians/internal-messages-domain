@@ -1,5 +1,4 @@
-# A .NET Core WEB API
-A .NET Core API for a messaging application.
+# .NET Core WEB API for a messaging application.
 
 # Features
 - The [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
