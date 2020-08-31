@@ -23,28 +23,28 @@
 
 Projects are setup to conform to the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) guidelines.
 
-**CompanyName.ProjectName.WebApi**
+**Internal.Messages.WebApi**
 A RESTful Web Api project for communication with a UI layer.
 
-**CompanyName.ProjectName.Scheduler**
+**Internal.Messages.Scheduler**
 A project for implementing scheduled tasks with the Hangfire library. New scheduled tasks can be added to this project. Task settings, like cron expressions, are added to this project's appsettings.json file. 
 
-**CompanyName.ProjectName.Core**
+**Internal.Messages.Core**
 A core project to hold domain models, aggregates, interfaces, constants etc.
 
-**CompanyName.ProjectName.Infrastructure**
+**Internal.Messages.Infrastructure**
 A project to hold services and business logic.
 
-**CompanyName.ProjectName.Configuration**
+**Internal.Messages.Configuration**
 Configurations for Dependency Injection, AutoMapper and Entity Framework Core to be shared across projects.
 
-**CompanyName.ProjectName.Repository**
+**Internal.Messages.Repository**
 This repository uses Entity Framework Core and the Repository Pattern for CRUD operations.
 
 Running Code First Migrations:
 1. Open the **Package Manager Console** window in Visual Studio.
-2. Set the Default project at the top of the console window to: `CompanyName.ProjectName.Repository`
-3. Run the command: `Add-Migration NameOfYourMigration --verbose -startupproject CompanyName.ProjectName.WebApi`
+2. Set the Default project at the top of the console window to: `Internal.Messages.Repository`
+3. Run the command: `Add-Migration NameOfYourMigration --verbose -startupproject Internal.Messages.WebApi`
 
 **Tests**
 Includes Integration and Unit testing projects and a TestUtilities project for sharing logging, in memory database dependencies and AutoMapper mocking between tests.  
